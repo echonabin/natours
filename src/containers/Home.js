@@ -17,6 +17,7 @@ const Home = () => {
           buttonColor='primary'
           buttonText='discover our tours'
           link='#'
+          buttonAnimated={true}
         />
       </TextBox>
     </header>

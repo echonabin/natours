@@ -100,6 +100,18 @@ body {
     }
 }
 
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -124,7 +136,8 @@ body {
 
 .btn-primary {
     background-color: #fff;
-    color: #777
+    color: #777;
+
 }
 
 .btn:after {
@@ -145,6 +158,11 @@ body {
 }
 
 .btn:hover::after {
-    transform: scale(1.5);
+    transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+
+.btn-animated {
+    animation: moveUp .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
